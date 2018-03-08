@@ -3,6 +3,6 @@
 
 
 # 数据库和分布式系统以及分布式数据库技术汇总
-
+## 2017年数据库技术盘点 http://blog.csdn.net/Tencent_TEG/article/details/79324165
 ## 开源实现
 ### peloton数据库

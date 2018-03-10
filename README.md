@@ -24,6 +24,8 @@ http://www.cnblogs.com/chenpingzhao/p/5003881.html
 https://www.cnblogs.com/cchust/p/3961260.html 
 http://blog.itpub.net/22664653/viewspace-1140915/ 
 #### gossip协议
+#### Raft协议
+
 
 ## 开源实现
 ### 全局事务服务 GTS（阿里）
@@ -31,7 +33,10 @@ http://blog.itpub.net/22664653/viewspace-1140915/
 https://help.aliyun.com/document_detail/48726.html?spm=a2c4g.11174283.3.1.gs0tKh 
 ### peloton数据库 
 https://yq.aliyun.com/articles/214367
+阿里云新一代关系型数据库 PolarDB 剖析 https://yq.aliyun.com/articles/172724?utm_content=m_28518
+Taurus分布式数据库和AWS Aurora对比 https://zhuanlan.zhihu.com/p/29182627
 ### Aurora
+Aurora通过计算节点和存储节点分离，计算节点scale up，存储节点scale out的理念将公有云的关系数据库产品推向了一个新的高度。
 Aurora是一个云上环境全新的数据库服务可以很好的解决上述传统数据库遇到的问题。 它基于存储计算分离的架构，并将回放日志部分下推到分布式存储层，存储节点与数据库实例(计算节点)松耦合，并包含部分计算功能。 Aurora体系下的数据库实例仍然包含了大部分核心功能，比如查询处理，事务，锁，缓存管理，访问接口和undo日志管理等；Aurora相对于传统数据库有三大优势，首先，底层数据库存储是一个分布式存储服务，可以轻松应对故障；其次，数据库实例往底层存储层只写redo日志，因此数据库实例与存储节点之间的网络压力大大减小，这为提升数据库性能提供了保障；第三，将部分核心功能(故障恢复，备份还原)下推到存储层，这些任务可以在后台不间歇地异步执行，并且不影响前台用户任务。
 https://www.allthingsdistributed.com/files/p1041-verbitski.pdf 
 http://www.cnblogs.com/cchust/p/7476876.html 

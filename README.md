@@ -1,5 +1,7 @@
+
+
 # 为什么叫blackbeauty?
-《黑骏马》的作者安纳塞维尔由于腿脚不便一生与马为伴。在生命的最后几年，她笔触细腻真实地从马的视角讲述了Darkie的故事。Darkie诚实可靠、温和谦逊、友善勇敢，历经磨难却也不失本心。这本是一匹马的自述，却也是社会人性的缩影。
+来源于小说《黑骏马》,《黑骏马》的作者安纳塞维尔由于腿脚不便一生与马为伴。在生命的最后几年，她笔触细腻真实地从马的视角讲述了Darkie的故事。Darkie诚实可靠、温和谦逊、友善勇敢，历经磨难却也不失本心。这本是一匹马的自述，却也是社会人性的缩影。
 
 
 # 数据库和分布式系统以及分布式数据库技术汇总
@@ -25,7 +27,7 @@ https://www.cnblogs.com/cchust/p/3961260.html
 http://blog.itpub.net/22664653/viewspace-1140915/ 
 #### gossip协议
 #### Raft协议
-
+#### 并发控制算法SSCC https://github.com/domino-succ/domino
 
 ## 开源实现
 ### 全局事务服务 GTS（阿里）
@@ -44,6 +46,15 @@ https://cloud.tencent.com/developer/article/1005636
 ## 数据库中间件
 ### UCloud分布式数据库UDDB
 
+## Trafodion
+Trafodion supports distributed ACID transaction semantics using the Multi-Version Concurrency Control (MVCC) model. 
+http://trafodion.apache.org/architecture-overview.html
+Trafodion的事务处理器将并发控制的职责分成两部分，TM(Transaction Manager)负责整个事务的分布式并发控制，保证事务本身的一致性；RM(Resource Manager)负责数据访问的并发控制，保证数据的一致性。
+具体来说，RM采用前面所说的MVCC技术，提供Snapshot Isolation级别的数据一致性。
+在Trafodion中，每个HBase的Region都是一个RM。一个事务很可能会在多个Region上操作，比如事务需要更新两行数据，而它们分别属于两个不同的Region。在这种情况下，一个事务会有多个RM参与。而HBase的Region很可能运行在不同的物理节点上，因此这是一种分布式事务。分布式事务由TM保证整个事务的一致性。
+TM使用两阶段提交协议来保证分布式事务的一致性。
+http://blog.itpub.net/30206145/viewspace-1596630/
+
 ### share nothing和share disk架构
 比较典型的share disk数据库有oracle RAC和DB2 PureScale
 Share-nothing架构如GreenPlum，DB2,SQL Server及分布式的hadoop使用的是Shared Noting架构，Google Spanner、OceanBase、TIDB
@@ -54,3 +65,18 @@ Share-nothing架构如GreenPlum，DB2,SQL Server及分布式的hadoop使用的�
 https://wenku.baidu.com/view/7d99b37f5acfa1c7aa00ccdd.html 
 https://en.wikipedia.org/wiki/Shared-nothing_architecture 
 http://blog.itpub.net/26277071/viewspace-710924/ 
+
+## 微服务架构servicecomb
+
+## NOSQL数据库
+### Hbase数据库
+HBase架构和设计 http://www.sysdb.cn/index.php/2016/01/10/hbase_principle/
+HBase行级事务模型 http://hbasefly.com/2017/07/26/transaction-2/
+
+## 关系型数据库
+### mysql数据库
+MySQL跨行事务模型 http://hbasefly.com/2017/08/19/mysql-transaction/
+
+
+## 消息队列、事务消息
+### 分布式开放消息系统(RocketMQ)的原理与实践  http://www.cnblogs.com/wxd0108/p/6038543.html

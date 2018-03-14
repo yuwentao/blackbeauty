@@ -46,6 +46,8 @@ https://cloud.tencent.com/developer/article/1005636
 ## 数据库中间件
 ### UCloud分布式数据库UDDB
 
+### shardingjdbc中间件
+http://shardingjdbc.io/docs_cn/02-guide/transaction/
 ## Trafodion
 Trafodion supports distributed ACID transaction semantics using the Multi-Version Concurrency Control (MVCC) model. 
 http://trafodion.apache.org/architecture-overview.html
@@ -73,6 +75,10 @@ http://blog.itpub.net/26277071/viewspace-710924/
 HBase架构和设计 http://www.sysdb.cn/index.php/2016/01/10/hbase_principle/
 HBase行级事务模型 http://hbasefly.com/2017/07/26/transaction-2/
 
+## redis数据库
+redis labs 企业版也加了许多新功能，开源版本没有，例如，redis Flash, redis spark connector 
+greenplum 增强新功能的企业版是Deepgreen
+
 ## 关系型数据库
 ### mysql数据库
 MySQL跨行事务模型 http://hbasefly.com/2017/08/19/mysql-transaction/
@@ -80,3 +86,8 @@ MySQL跨行事务模型 http://hbasefly.com/2017/08/19/mysql-transaction/
 
 ## 消息队列、事务消息
 ### 分布式开放消息系统(RocketMQ)的原理与实践  http://www.cnblogs.com/wxd0108/p/6038543.html
+
+## 分布式数据库
+###  ckrchdb(cockroachdb)
+cockroachdb使用go语言开发，ckrchdb国内用户有：百度，京东。爱钱进，今日头条和平安保险（平安科技）
+详解CockroachDB事务处理系统http://www.cnblogs.com/foxmailed/p/6885368.html

@@ -91,3 +91,12 @@ MySQL跨行事务模型 http://hbasefly.com/2017/08/19/mysql-transaction/
 ###  ckrchdb(cockroachdb)
 cockroachdb使用go语言开发，ckrchdb国内用户有：百度，京东。爱钱进，今日头条和平安保险（平安科技）
 详解CockroachDB事务处理系统http://www.cnblogs.com/foxmailed/p/6885368.html
+###  tidb(pingcap) https://pingcap.com/docs-cn/overview/#tidb-%E7%AE%80%E4%BB%8B
+#### TiDB和CockroachDB同为Spanner/F1的开源实现,共同点和差异分别是：
+事务模型完全不同;
+tidb结构上  Highly layered,存储层和计算层彻底分离，连编程语言都分开，方便对接其他的计算平台;
+SQL优化器的设计和侧重点也完全不一样;
+虽然同为 RocksDB + Multi-Raft，但是本质上还是不太一样的，比如处理分裂和合并时的一致性这类的实现方式都不太一样;
+TiDB架构设计松耦合，拆成 Tidb, tikv, pd 多个不同部署的部分，导致latency很大，针对OLTP的场景性能会很差;
+内存型的数据库如voltdb和memsql性能就很好;TIDB的中文文档非常完善。
+

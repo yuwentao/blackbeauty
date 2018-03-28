@@ -57,7 +57,7 @@ http://shardingjdbc.io/docs_cn/02-guide/transaction/
 
 ### 4.4.3 mycat 中间件
 
-### 5. Trafodion
+## 5. Trafodion
 Trafodion supports distributed ACID transaction semantics using the Multi-Version Concurrency Control (MVCC) model. 
 http://trafodion.apache.org/architecture-overview.html
 Trafodion的事务处理器将并发控制的职责分成两部分，TM(Transaction Manager)负责整个事务的分布式并发控制，保证事务本身的一致性；RM(Resource Manager)负责数据访问的并发控制，保证数据的一致性。

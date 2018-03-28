@@ -115,4 +115,4 @@ SQL优化器的设计和侧重点也完全不一样;
 虽然同为 RocksDB + Multi-Raft，但是本质上还是不太一样的，比如处理分裂和合并时的一致性这类的实现方式都不太一样;
 TiDB架构设计松耦合，拆成 Tidb, tikv, pd 多个不同部署的部分，导致latency很大，针对OLTP的场景性能会很差;
 内存型的数据库如voltdb和memsql性能就很好;TIDB的中文文档非常完善。
-
+tidb事务隔离级别 https://pingcap.com/docs-cn/sql/transaction-isolation/

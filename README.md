@@ -8,13 +8,13 @@
 ## 1.数据库技术总览
 2017年数据库技术盘点 http://blog.csdn.net/Tencent_TEG/article/details/79324165
 ### 1.1自治数据库
-####1.1.1自治数据库云：Oracle Database 18c
+#### 1.1.1自治数据库云：Oracle Database 18c
 自治数据库云具备这些特点：
 自主驱动：完全自动化的打补丁、升级、备份和可用性架构，可执行所有日常数据库维护任务，无需任何人工干预。
 消除人为错误：自动恢复功能可自动检测并应用纠正措施，Oracle 自治数据库云将自动实施 Oracle Real Application Clusters (RAC) 和跨区域 Oracle Active Data Guard，确保持续的可用性。
 Oracle SLA确保99.995%的可靠性和可用性，把代价高昂的计划内和计划外停机控制在每年30分钟内。
 无需手动性能调优：采用自适应机器学习技术，自动激活列式缓存、存储索引、压缩和资源优先排序，根据负载所执行的实际工作分配资源，避免代价高昂的过度供应。
-####1.1.2混合事务型分析型数据库
+#### 1.1.2混合事务型分析型数据库
 Hybrid Transactional/Analytical Processing (HTAP)：
 Hybrid Transactional/Analytical Processing (HTAP)是gartner提出的一个新名词，代表一种既能处理在线事务，又能处理分析型请求的混合数据库。
 ## 2.数据库排名和变化
@@ -67,10 +67,10 @@ TM使用两阶段提交协议来保证分布式事务的一致性。
 http://blog.itpub.net/30206145/viewspace-1596630/
 
 ## 6.架构模式
-###6.1 share nothing和share disk架构
+### 6.1 share nothing和share disk架构
 比较典型的share disk数据库有oracle RAC和DB2 PureScale
 Share-nothing架构如GreenPlum，DB2,SQL Server及分布式的hadoop使用的是Shared Noting架构，Google Spanner、OceanBase、TIDB
-####6.1.1. Shared Disk 架构
+#### 6.1.1. Shared Disk 架构
 所有的节点共享一份数据，优点是只要有一个节点可用，就可以访问所有数据；缺点是内存融合（cache fusion）大大限制了它的水平扩展能力。简单地说：可用性高，但可扩展性弱，常见于24*7的高可用性核心业务。
 ####6.1.2. Shared Nothing 架构
 数据和节点具有对应关系，缺点是如果要访问所有数据，必须所有节点都可用；优点是每个节点交互少，很容易扩展。简单地说：可扩展性强，可用性低。多用于VLDB

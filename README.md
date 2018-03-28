@@ -33,7 +33,11 @@ http://blog.itpub.net/22664653/viewspace-1140915/
 #### 3.6 paxos协议
 #### 3.7 并发控制算法SSCC 
 https://github.com/domino-succ/domino
-
+#### 3.8 二阶段提交
+#### 3.9 Google 论文
+##### 3.9.1 Google Spanner / F1
+##### 3.9.2 分布式事务模型Percolator
+Percolator 和 TiDB 事务算法 https://pingcap.com/blog-cn/percolator-and-txn/
 ## 4.知名系统与开源实现
 ### 4.1全局事务服务 GTS（阿里）
 全局事务服务（Global Transaction Service，简称 GTS）是一款高性能、高可靠、接入简单的分布式事务中间件，用于解决分布式环境下的事务一致性问题。 在单机数据库下很容易维持事务的 ACID（Atomicity、Consistency、Isolation、Durability）特性，但在分布式系统中并不容易，GTS 可以保证分布式系统中的分布式事务的 ACID 特性。 GTS 支持 DRDS、RDS、MySQL 等多种数据源，可以配合 EDAS 和 Dubbo 等微服务框架使用， 兼容 MQ 实现事务消息。通过各种组合，可以轻松实现分布式数据库事务、多库事务、消息事务、服务链路级事务等多种业务需求。

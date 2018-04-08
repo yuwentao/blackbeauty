@@ -7,7 +7,7 @@
 
 # 一.数据库和分布式系统以及分布式数据库技术汇总
 ## 1.数据库技术总览
-[2017年数据库技术盘点]: http://blog.csdn.net/Tencent_TEG/article/details/79324165
+[2017年数据库技术盘点] : http://blog.csdn.net/Tencent_TEG/article/details/79324165
 [cmsa]: https://github.com/ServiceComb/seckill/tree/master/seckill-command-service/README.md
 
 ### 1.1自治数据库

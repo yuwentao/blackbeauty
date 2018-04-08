@@ -2,11 +2,12 @@
 
 # 前言：为什么叫blackbeauty?
 来源于小说《黑骏马》,《黑骏马》的作者安纳塞维尔由于腿脚不便一生与马为伴。在生命的最后几年，她笔触细腻真实地从马的视角讲述了Darkie的故事。Darkie诚实可靠、温和谦逊、友善勇敢，历经磨难却也不失本心。这本是一匹马的自述，却也是社会人性的缩影。
-
+程序员很大程度上跟这批马类似，在其职业生涯以及整个人生过程中，个人唯有不断的提高自己的技能和专业知识，以及良好的合作精神才能有利用价值，只有不断进取拼搏才能不至于被淘汰。
+程序员虽然也可以单打独斗，自由职业，但是很大程度上需要借助于他所发挥的平台。
 
 # 一.数据库和分布式系统以及分布式数据库技术汇总
 ## 1.数据库技术总览
-2017年数据库技术盘点 http://blog.csdn.net/Tencent_TEG/article/details/79324165
+[2017年数据库技术盘点] (http://blog.csdn.net/Tencent_TEG/article/details/79324165)
 ### 1.1自治数据库
 #### 1.1.1自治数据库云：Oracle Database 18c
 自治数据库云具备这些特点：
@@ -18,7 +19,7 @@ Oracle SLA确保99.995%的可靠性和可用性，把代价高昂的计划内和
 Hybrid Transactional/Analytical Processing (HTAP)：
 Hybrid Transactional/Analytical Processing (HTAP)是gartner提出的一个新名词，代表一种既能处理在线事务，又能处理分析型请求的混合数据库。
 ## 2.数据库排名和变化
-DB-Engines 排名的数据库引擎  https://db-engines.com/en/ranking 
+[DB-Engines 排名的数据库引擎]  (https://db-engines.com/en/ranking) 
 ## 3.理论算法与模型
 ### 3.1 Quorum（NWR）模型
 http://www.iteye.com/news/32340 

@@ -85,9 +85,9 @@ https://wenku.baidu.com/view/7d99b37f5acfa1c7aa00ccdd.html
 https://en.wikipedia.org/wiki/Shared-nothing_architecture 
 http://blog.itpub.net/26277071/viewspace-710924/ 
 
-## 7.微服务架构servicecomb
-### 7.1 分布式事务专题
-### [原理介绍](http://www.hollischuang.com/archives/681)
+## 7.微服务架构
+### 7.1 分布式事务[专题介绍](https://github.com/yuwentao/blackbeauty/blob/master/distributeTransaction.md)
+### [原理介绍]
 
 ## 8.NOSQL数据库
 ### 8.1 Hbase数据库

@@ -86,8 +86,8 @@ https://en.wikipedia.org/wiki/Shared-nothing_architecture
 http://blog.itpub.net/26277071/viewspace-710924/ 
 
 ## 7.微服务架构servicecomb
-### 7.1 基于补偿事务的分布式事务saga
-### 
+### 7.1 分布式事务专题
+### [原理介绍](http://www.hollischuang.com/archives/681)
 
 ## 8.NOSQL数据库
 ### 8.1 Hbase数据库

@@ -88,6 +88,7 @@ http://blog.itpub.net/26277071/viewspace-710924/
 ## 7.微服务架构
 ### 7.1 分布式事务[专题介绍](https://github.com/yuwentao/blackbeauty/blob/master/distributeTransaction.md)
 ### [原理介绍]
+### 7.2 分布式事务框架Fescar(https://github.com/alibaba/fescar/wiki)
 
 ## 8.NOSQL数据库
 ### 8.1 Hbase数据库
